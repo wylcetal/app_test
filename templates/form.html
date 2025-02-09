@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Registrar nuevo usuario</h1>
+    <form method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="name" required><br>
+        <label>Correo:</label>
+        <input type="email" name="email" required><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+
+</html>
